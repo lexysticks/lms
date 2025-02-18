@@ -155,3 +155,5 @@ SWAGGER_SETTINGS = {
         }
     }
 }
+
+FORCE_SCRIPT_NAME = "/"
