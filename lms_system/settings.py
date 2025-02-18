@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     # 3rd party apps
     "rest_framework",
     "django_filters",
+    "whitenoise.runserver_nostatic",
     "drf_yasg",
 ]
 
@@ -53,6 +54,7 @@ AUTH_USER_MODEL = "authentication.CustomUser"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
