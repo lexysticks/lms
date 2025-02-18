@@ -23,17 +23,17 @@ from drf_yasg import openapi
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="My API",
+        title="LMS API",
         default_version="v1",
-        description="Test description",
-        terms_of_service="https://www.google.com/policies/terms/",
-        contact=openapi.Contact(email="contact@myapi.local"),
+        description="api for a simple learning management system",
+        terms_of_service="https://www.coke.com/policies/terms/",
+        contact=openapi.Contact(email="contact@contacts.local"),
         license=openapi.License(name="BSD License"),
     ),
+    url="https://lms-9r15.onrender.com/",
     public=True,
-    permission_classes=(permissions.AllowAny,),
+    permission_classes=[permissions.AllowAny],
 )
-
 
 urlpatterns = [
     path("admin/", admin.site.urls),
