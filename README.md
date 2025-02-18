@@ -74,13 +74,13 @@ python manage.py runserver
 ### 1. Get All Courses
 
 ```sh
-curl -X GET http://localhost:8000/courses/
+curl -X GET https://lms-9r15.onrender.com/courses/
 ```
 
 ### 2. Create a Course (Authenticated)
 
 ```sh
-curl -X POST http://localhost:8000/courses/ \\
+curl -X POST https://lms-9r15.onrender.com/courses/ \\
      -H "Authorization: Token your_token_here" \\
      -H "Content-Type: application/json" \\
      -d '{"title": "Django Basics", "description": "Learn Django", "price": 20}'
@@ -89,7 +89,7 @@ curl -X POST http://localhost:8000/courses/ \\
 ### 3. Enroll a User in a Course
 
 ```sh
-curl -X POST http://localhost:8000/enrollments/ \\
+curl -X POST https://lms-9r15.onrender.com/enrollments/ \\
      -H "Authorization: Token your_token_here" \\
      -H "Content-Type: application/json" \\
      -d '{"user_id": 1, "course_id": 2}'
@@ -97,9 +97,9 @@ curl -X POST http://localhost:8000/enrollments/ \\
 
 ## Deployment
 
-The project is deployed on **Render / PythonAnywhere**.
+The project is deployed on **Render**.
 
-- **Live API URL:** [your-deployed-api-url]
+- **Live API URL:** [https://lms-9r15.onrender.com/]
 - **Test Account:**
   - **Email:** testuser@gmail.com
   - **Password:** testpassword
