@@ -28,7 +28,7 @@ JWT_ALGORITHM = config("JWT_ALGORITHM")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", cast=bool)
 
-ALLOWED_HOSTS = ["lms.onrender.com"]
+ALLOWED_HOSTS = ["lms-9r15.onrender.com"]
 
 
 # Application definition
